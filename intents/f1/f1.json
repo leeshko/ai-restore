@@ -1,0 +1,11 @@
+{
+  "name": "e4146a97-343f-4479-bfd1-b3d558d11e9a",
+  "displayName": "f1",
+  "parameters": [ {
+    "id": "number",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "description": "f1",
+  "numTrainingPhrases": 3
+}

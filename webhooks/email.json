@@ -1,0 +1,11 @@
+{
+  "name": "be3d30b6-301e-4e03-97ff-50a159309278",
+  "displayName": "email",
+  "genericWebService": {
+    "uri": "https://us-central1-villagewellth.cloudfunctions.net/email",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

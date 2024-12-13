@@ -1,0 +1,11 @@
+{
+  "name": "1a0dce92-46d3-456d-883f-5b4cdc8c2e52",
+  "displayName": "myFunc",
+  "genericWebService": {
+    "uri": "https://us-central1-villagewellth.cloudfunctions.net/myFunc",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

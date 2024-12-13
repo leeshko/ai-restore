@@ -1,0 +1,14 @@
+{
+  "name": "8222522f-4f3d-4aac-8b68-2a43b297f4c8",
+  "displayName": "Sun",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  }, {
+    "id": "geo-city",
+    "entityType": "@sys.geo-city"
+  } ],
+  "priority": 500000,
+  "description": "sun",
+  "numTrainingPhrases": 3
+}
