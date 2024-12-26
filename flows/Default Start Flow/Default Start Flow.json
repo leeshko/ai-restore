@@ -17,25 +17,8 @@
     },
     "name": "f9db96db-38fd-4657-a4c1-a33b5aa27b5a",
     "description": "hello"
-  }, {
-    "intent": "Sun",
-    "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Default page  agent says solar" ]
-        },
-        "languageCode": "en"
-      } ],
-      "nextActionOverride": {
-      
-      }
-    },
-    "targetPage": "solar system",
-    "name": "c5c334aa-b4c7-4b91-a60a-325913d348b4",
-    "description": "Solar system"
   } ],
   "eventHandlers": [ {
-    "targetFlow": "Default Start Flow",
     "event": "sys.no-match-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -44,8 +27,7 @@
         },
         "languageCode": "en"
       } ],
-      "webhook": "email",
-      "tag": "confirm",
+      "enableGenerativeFallback": true,
       "nextActionOverride": {
       
       }
@@ -65,7 +47,8 @@
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_STANDARD",
-    "classificationThreshold": 0.30000001
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
   },
   "knowledgeConnectorSettings": {
     "enabled": true,
@@ -75,18 +58,13 @@
           "text": [ "$request.knowledge.answers[0]" ]
         },
         "languageCode": "en"
-      }, {
-        "languageCode": "en",
-        "knowledgeInfoCard": {
-          "maximumSnippets": 1
-        }
       } ]
     },
     "dataStoreConnections": [ {
       "dataStoreType": "UNSTRUCTURED",
-      "dataStore": "projects/1055080666495/locations/global/collections/default_collection/dataStores/agenttraining-data_1732087608206",
+      "dataStore": "projects/1055080666495/locations/global/collections/default_collection/dataStores/sw_1734042004113",
       "languageCode": "en",
-      "documentProcessingMode": "DOCUMENTS",
+      "documentProcessingMode": "CHUNKS",
       "aclConfig": {
       
       }
@@ -95,6 +73,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_STANDARD",
     "classificationThreshold": 0.69999999,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
     "customConfigKey": "733d87aa-b0c0-4f2c-952f-d822bea9ec91",
     "languageCode": "en"
   } ]
